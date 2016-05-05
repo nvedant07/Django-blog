@@ -1,0 +1,85 @@
+ {% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>HOME</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/home.css'%}" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{% static 'css/workaround-bug.css'%}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/cover.css'%}" rel="stylesheet">
+
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <a href='home'><h3 class="masthead-brand">ShopNet</h3></a>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="home">Home</a></li>
+                  <li><a href="cart">Cart</a></li>
+                  <li><a href="logout">Log out</a></li>
+                </ul>
+              </nav>
+            </div>
+            <br><br><br>
+             <h1 class="cover-heading" align="left">Welcome {{name}}</h1>
+          </div>
+
+          <div class="inner cover">
+             <a href="write" class="btn btn-lg btn-default">Write a new blog</a>
+            <!-- <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">
+              <a href="logout" class="btn btn-lg btn-default">Log out</a>
+            </p> -->
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+             <p><a href="change">Change Password</a></p>
+          <p><a href="delete">Delete account</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/jquery.min.js'%}"></script>
+    
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static 'js/ie.js'%}"></script>
+  </body>
+</html>
