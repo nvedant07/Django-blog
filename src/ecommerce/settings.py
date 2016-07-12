@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['*']
 
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_HOST_USER='nvedant07@gmail.com'
-EMAIL_HOST_PASSWORD='arsenal@10'
+EMAIL_HOST_PASSWORD=#password here
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
 
